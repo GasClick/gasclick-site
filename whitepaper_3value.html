@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+	<meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:url"           		content="https://gasclick.net" />
+	<meta property="og:image"         		content="https://gasclick.net/images/promo/banner_gasclick7.png" />
+	<meta property="fb:app_id"         		content="190421111397713"/>
+	<meta property="og:type"          		content="website" />
+	<meta property="og:title"         		content="GasClick" />
+	<meta property="og:description"   		content="Energizing the world | Commodity money based on LPG." />
+
+    <title>CryptoGas Whitepaper</title>
+    
+   	<link rel="icon" href="favicon.png">
+
+    <!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<link rel="stylesheet" href="https://gasclick.co/css/whitepaper.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/css.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_light.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_default.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_dark.css">
+
+    <!-- Custom Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <style>
+	/* Google Translate Overrides */
+	html, body{
+	    min-height: 0!important;
+	    height: auto!important;
+	    position: inherit!important;
+	}
+    </style>
+    
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NSBD2M11J"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-6NSBD2M11J');
+	</script>
+    
+</head>
+
+<body style="padding-top: 65px;">
+
+	<nav class="navbar navbar-expand-xxl navbar-dark fixed-top px-5 fs-4" style="z-index:10;">
+		<a class="navbar-brand" href="index.html"><img src="https://gasclick.co/img/logo.png" height="50" /></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mx-auto my-5 my-xxl-0">
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="index.html">PLATFORM</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="token.html">$CRYPTOGAS</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="investors.html">INVESTORS</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="project.html">PROJECT</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse1" href="whitepaper_9investors.html">WHITEPAPER</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+			</ul>
+			<ul class="navbar-nav mx-auto">
+				<style>
+					.colors {
+					  position: relative;
+					  display: inline-block;
+					}
+					.colors-content {
+					  display: none;
+					  position: absolute;
+					  background-color: #f9f9f9;
+					  min-width: 160px;
+					  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					  padding: 12px 16px;
+					  z-index: 1;
+					}
+					.colors:hover .colors-content {
+					  display: block;
+					}
+				</style>
+				<div class="btn-group dropdown-center mr-3">
+					<button type="button" class="btn btn-default" data-bs-toggle="dropdown">
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css" />
+				    	<span class="fa fa-eye fa-3x color-theme-reverse2"></span>
+				  	</button>
+					<ul class="dropdown-menu scrollable-menu background-gradient1 color-theme-reverse2 p-0 m-0 border-radius-10 hand" role="menu" onchange="translateLanguage(this.value);">
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2"></span> Choose skin</li>
+						<li class="dropdown-divider background-gradient1 color-theme-reverse2"></li>
+						<li id="color-default" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('default');$(this).addClass('active').siblings().removeClass('active');"> Default</li>
+						<li class="dropdown-divider background-gradient1 color-theme-reverse2"></li>
+						<li id="color-white" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('white');$(this).addClass('active').siblings().removeClass('active');"> White</li>
+						<li id="color-light" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('light');$(this).addClass('active').siblings().removeClass('active');"> Light</li>
+						<li id="color-gold" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('gold');$(this).addClass('active').siblings().removeClass('active');"> Gold</li>
+						<li id="color-dark" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('dark');$(this).addClass('active').siblings().removeClass('active');"> Dark</li>
+				  </ul>
+				</div>
+				<script>
+					window.onload=function() {
+						var theme = localStorage.getItem('data-theme');
+						if (theme === null)
+							return;
+						$( "#color-" + theme).addClass('active');
+						toggle(theme);
+					}
+					function toggle(theme) {
+						document.documentElement.setAttribute('data-theme', theme);
+						localStorage.setItem('data-theme', theme);
+					};
+				</script>
+				
+				<div class="btn-group dropdown mr-3">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css" />
+					<button type="button" class="btn btn-default" data-bs-toggle="dropdown">
+				    	<span class="flag-icon flag-icon-us h2 m-0"></span>
+				  	</button>
+					<ul id='languages' class="dropdown-menu scrollable-menu background-theme-transparent p-0 m-0" role="menu" onchange="translateLanguage(this.value);">
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ar');"><span class="flag-icon flag-icon-sa mr-2"></span> Arabic</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('zh-TW');"><span class="flag-icon flag-icon-cn mr-2"></span> Chinese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('nl');"><span class="flag-icon flag-icon-nl mr-2"></span> Dutch</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('en');"><span class="flag-icon flag-icon-us mr-2"></span> English</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('fr');"><span class="flag-icon flag-icon-fr mr-2"></span> French</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('de');"><span class="flag-icon flag-icon-de mr-2"></span> German</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('hi');"><span class="flag-icon flag-icon-in mr-2"></span> Hindi</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('id');"><span class="flag-icon flag-icon-id mr-2"></span> Indonesian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('it');"><span class="flag-icon flag-icon-it mr-2"></span> Italian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ja');"><span class="flag-icon flag-icon-jp mr-2"></span> Japanese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ko');"><span class="flag-icon flag-icon-kr mr-2"></span> Korean</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('fa');"><span class="flag-icon flag-icon-ir mr-2"></span> Persian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('pt');"><span class="flag-icon flag-icon-pt mr-2"></span> Portuguese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ru');"><span class="flag-icon flag-icon-ru mr-2"></span> Russian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('sk');"><span class="flag-icon flag-icon-sk mr-2"></span> Slovak</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('es');"><span class="flag-icon flag-icon-es mr-2"></span> Spanish</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('tr');"><span class="flag-icon flag-icon-tk mr-2"></span> Turkish</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('tw');"><span class="flag-icon flag-icon-tw mr-2"></span> Taiwanese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('uk');"><span class="flag-icon flag-icon-ua mr-2"></span> Ukrainian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('vi');"><span class="flag-icon flag-icon-vn mr-2"></span> Vietnamese</li>
+					</ul>
+				</div>
+			</ul>
+   			<ul class="nav navbar-nav pull-sm-right">
+				<li class="nav-item my-auto h4"><a href="https://gasclick.net/litepaper_en.html" class="btn color-theme-reverse2 fw-bold border border-1 border-radius-10 fs-5 p-2" >ADD TO WHITELIST</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<style media="screen">
+		.social-media{
+		  align-items: center;
+		  display: flex;
+		  transition: transform 0.3s ease-in-out;
+		}
+		.social-media:hover{
+		  transform: translateX(calc(-100% + 60px));
+		}		
+		.social-media a{
+		  color: #fff;
+		  padding: 0 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  width: 100px;
+		}
+		.social-media span{
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		}
+		.social-media-container li .fab, .social-media-container li .fas {
+		  display: block;
+		  width: 50px;
+		  text-align: center;
+		  float: right;
+		  font-size: 30px;
+		  line-height: 50px;
+		  color: #EFEFEF;
+		}
+		.social-media-container{
+		  top: 50%;
+		  list-style-type: none;
+		  padding: 0;
+		  position: fixed;
+		  left: calc(100% - 50px);
+		  transform: translateY(-50%);
+		  min-width: 150px;
+		  z-index: 2000;
+		}
+		
+		.social-media.twitter { background-color: #0099d4; }
+		.social-media.twitter .fab { background-color: #00aced; }
+		.social-media.pinterest { background-color: #b51d23; }
+		.social-media.pinterest .fab { background-color: #cb2027; }
+		.social-media.linkedin { background-color: #006a9d; }
+		.social-media.linkedin .fab { background-color: #007bb6; }
+		.social-media.instagram { background-color: #497293; }
+		.social-media.instagram .fab { background-color: #517fa4; }
+		.social-media.github { background-color: #333; }
+		.social-media.github .fab { background-color: #484848; }
+		.social-media.blog { background-color: #014592; }
+		.social-media.blog .fas { background-color: #0F52BA; }
+	</style>
+	<ul class="social-media-container">
+	  <li class="social-media twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/GasClick" target="_blank"><span>Twitter</span></a></li>
+	  <li class="social-media linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/company/35436965" target="_blank"><span>Linkedin</span></a></li>
+	  <li class="social-media github"><i class="fab fa-github"></i><a href="https://github.com/GasClick" target="_blank"><span>Github</span></a></li>
+	  <li class="social-media blog"><i class="fas fa-laptop-code"></i><a href="https://cryptonomics.network/" target="_blank"><span>Forum</span></a></li>
+	</ul>
+	
+    <div class="wrapper">
+
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="background-wp2">
+            <div class="sidebar-header background-wp3">
+                <h3 class="text-center size5">Whitepaper</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="pt-5 pb-2">
+                    <a href="#introSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase light-grey">The abandoned road</a>
+                    <ul class="collapse list-unstyled" id="introSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#money" class="light-grey">The evolution of Money</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#price" class="light-grey">The price formation machine</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#road" class="light-grey">The abandoned road</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#where" class="light-grey">Where we are?</a></li>   
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#private" class="light-grey">Privately Issued Currencies</a></li>                 
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#tokenizationSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase light-grey">Tokenization to the Rescue</a>
+                    <ul class="collapse list-unstyled" id="tokenizationSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#currency_tool" class="light-grey">Definition of Money</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#t10n" class="light-grey">Tokenization</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#crowdsolving" class="light-grey">Crowdsolving Problems</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#frameworkSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase background-wp3 light-grey">Capturing Value</a>
+                    <ul class="collapse show list-unstyled" id="frameworkSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value" class="background-wp3 light-grey">Token Value (Demand)</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#capture" class="background-wp3 light-grey">Monetary Policies (Supply)</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value_no" class="background-wp3 light-grey">No Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#price_capture" class="background-wp3 light-grey">Price Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value_capture" class="background-wp3 light-grey">Value Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#tmm" class="background-wp3 light-grey">Tokenization Maturity Model</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#marketSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Market Analysis</a>
+                    <ul class="collapse list-unstyled" id="marketSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPG" class="dark-grey">LPG</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPGRetailChain" class="dark-grey">LPG Retail Value Chain</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPGEcosystem" class="dark-grey">Ecosystem</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#BioLPG" class="dark-grey">The BioGas Transition</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#collectionSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">GasClick Platform</a>
+                    <ul class="collapse list-unstyled" id="collectionSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Platform Vision</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Products</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Platform Features</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#accessubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">CRYPTOGAS Engineering</a>
+                    <ul class="collapse list-unstyled" id="accessubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#tokenizing" class="dark-grey">Tokenizing Energy</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#core" class="dark-grey">CRYPTOGAS Core Value</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#extended" class="dark-grey">CRYPTOGAS Extended Value</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#arch" class="dark-grey">CRYPTOGAS Architecture</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#tokenomicsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">CRYPTOGAS Monetary Policy</a>
+                    <ul class="collapse list-unstyled" id="tokenomicsSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#supply" class="dark-grey">Token Supply</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#distribution" class="dark-grey">Token Distribution</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#allocation" class="dark-grey">Token Allocation</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#tax" class="dark-grey">Transaction Taxes</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#roadmapSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Project Roadmap</a>
+                    <ul class="collapse list-unstyled" id=roadmapSubmenu>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#scope" class="dark-grey">Geographical Scope</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#country" class="dark-grey">Deploying a Country</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#penetration" class="dark-grey">Market penetration</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#defi" class="dark-grey">Common DeFi Services</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#challenges" class="dark-grey">Challenges</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#cookiesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Investors Value</a>
+                    <ul class="collapse list-unstyled" id="cookiesSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#ico" class="dark-grey">ICO Investors</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#price" class="dark-grey">Price Estimation</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#value" class="dark-grey">Value Capture Estimation</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="http://gasclick.net/token.html" class="background-wp3 light-grey">Back to Web</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar sidebar-navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="sidebar-navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    
+ 					<div class="btn-group">
+					  <button type="button" class="btn dropdown-toggle background-wp3 color-wp1 border-wp1" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+					    Investors Value
+					  </button>
+					  <div class="dropdown-menu dropdown-menu-right">
+					    <a class="dropdown-item" href="#"><b>Navigation</b></a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_1intro.html">Introduction</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_3market.html">Market Analysis</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_4platform.html">GasClick Platform</a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_5token.html">Token Engineering</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_6tokenomics.html">Tokenomics</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_7roadmap.html">Project Roadmap</a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item background-wp3" href="https://gasclick.net/whitepaper_7investors.html">Investors Value</a>
+					  </div>
+					</div>
+
+                </div>
+            </nav>
+            
+            <h1 class="text-center size5">Capturing Value</h1>
+            <p class="text-center">Under development</p>
+            
+            <h2 class="size3"><a name="value#value" style="padding-top: 90px;"></a>Token Value</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Token Utility</h3>
+			<div class="m-4"></div>
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+					<div class="table-responsive">
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col" colspan="2" >Utility</th>
+						      <th scope="col">Description</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row" rowspan="2">Identification</th>
+						      <th scope="row">Access</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Governance</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row" rowspan="5">Financial Services</th>
+						      <th scope="row">Profit-Sharing</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Liquidity Provision</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Mining</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Staking</th>
+						      <td>PoS, Stake-for-Access Model, Reputation Mechanism</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Launchpad</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row" rowspan="3" style="vertical-align : middle;text-align:center;">Currency Functions</th>
+						      <th scope="row">Medium of Exchange</th>
+						      <td>Fundamental Utility</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Unit of Account</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Reserve of Value</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row" rowspan="5" style="vertical-align : middle;text-align:center;">Currency Services</th>
+						      <th scope="row">Payments</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Cards</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Discounts</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Lending</th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Transfers</th>
+						      <td></td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+			
+            <a name="collectionSubmenu"></a>
+            <h3 class="blue">Intrinsic Value</h3>
+			<div class="m-4"></div>
+            <p class="size2">Intrinsic value is the value that the token gains from the credibility and utility of its project.</p>
+            <p class="size2">Economic value differs according to the different Schools of Economic Thought. This is relevant because, when we design a token, we can adhere to the Economic School of our choice. Below there is simplified list of economic values:</p>
+			<p class="m-5"></p>
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+				    <div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">Theory</th>
+						      <th scope="col">Author</th>
+						      <th scope="col">Value</th>
+						      <th scope="col">Fundamentals</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">Land Theory of Value</th>
+						      <td>Physiocrats</td>
+						      <td>Objective</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Objective/Intrinsic Theory of Value</th>
+						      <td>Adam Smith</td>
+						      <td>Objective</td>
+						      <td>Value that something has “in itself”</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Labor Theory of Value</th>
+						      <td>Ricardo</td>
+						      <td>Objective</td>
+						      <td>Correlation between the value of a good and the labor required to produce the good</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Use Value / Exchange Value Theory</th>
+						      <td>Marx</td>
+						      <td>Objective</td>
+						      <td>Exchange-value is the quantitative aspect of value, as opposed to “use-value” which is the qualitative aspect of value, and constitutes the substratum of the price of a commodity.</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Commodity’s costs of production</th>
+						      <td>John Stuart Mill</td>
+						      <td>Objective</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Subjective Theory of Value</th>
+						      <td>Menger</td>
+						      <td>Subjective</td>
+						      <td>The subjective theory of value believes that a good's value depends on the consumers wants and needs</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Marginal Utility Theory of Value</th>
+						      <td>Jevons</td>
+						      <td>Subjective</td>
+						      <td>Marginal utility</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Monetary theory of value</th>
+						      <td>Keynes</td>
+						      <td>Objective</td>
+						      <td>Monetary theory posits that a change in money supply is a key driver of economic activity. MV = PQ. </td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Power Theory of Value</th>
+						      <td>Jonathan Nitzan Shimshon Bichler </td>
+						      <td>Objective</td>
+						      <td>The power theory of value approaches the question of valuation from the top down, by which the dominant owners of the bulk of societal wealth, determine the value of their assets.</td>
+						    </tr>
+						  </tbody>
+						</table>
+						
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <p class="size2">All these theories of economic value can be classified in 2: objective and subjective value theories. The objective, or intrinsic, theories of value hold that the value of an object, or a good, or service, is intrinsic, meaning that it can be estimated using objective measures. Most such theories look to the process of producing an item, and the costs involved in that process, as a measure of the item's intrinsic value. The subjective theory of value, instead, states that prices of goods and services in a market are determined by the subjective preferences of consumers.</p>
+            <p class="size2">According to the nature of the value and the way that the value is captured, we have different types of cryptocurrencies:</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col" rowspan="2">Utility Token Type</th>
+						      <th scope="col" colspan="2">Fund. Economic Value</th>
+						      <th scope="col" rowspan="2">Value Interaction</th>
+						      <th scope="col" colspan="2">Monetary Unit Value</th>
+						    </tr>
+						    <tr>
+						      <th scope="col">Value</th>
+						      <th scope="col">Consensus</th>
+						      <th scope="col">Distribution Event</th>
+						      <th scope="col">Sample</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">Unbacked Tokens</th>
+						      <td></td>
+						      <td></td>
+						      <td></td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Asset Backed Tokens</th>
+						      <td>Subjective</td>
+						      <td>PoO</td>
+						      <td>>>> Captured >>></td>
+						      <td>No Minted</td>
+						      <td>Tokens</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Utility Coin</th>
+						      <td>Any</td>
+						      <td>Any</td>
+						      <td>≠≠≠ Independent ≠≠≠</td>
+						      <td>PoS / PoW</td>
+						      <td>Coins</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Objective Utility Token</th>
+						      <td>Objective</td>
+						      <td>PoPW / XToEarn</td>
+						      <td><<< Created <<<</td>
+						      <td>Minted On Supply</td>
+						      <td>Tokens</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">Subjective Utility Tokens</th>
+						      <td>Subjective</td>
+						      <td>PoO</td>
+						      <td>>>> Captured >>></td>
+						      <td>Minted On Demand</td>
+						      <td>Tokens</td>
+						    </tr>
+						  </tbody>
+						</table>
+					
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <p class="size2">Once the value is captured, we need to provide additional utilities to the token to retain and, maybe, grow, this value to maintain velocity of circulation under controlled margins.</p>
+			<p class="m-5"></p>
+			
+            <h3 class="blue">Speculative Value</h3>
+			<div class="m-4"></div>
+            <p class="size2">Speculative value is the value that the token gains from speculations traders make on a token's price.</p>
+			<p class="m-5"></p>
+						
+            <h2 class="size3"><a name="value#capture" style="padding-top: 90px;"></a>Monetary Policies</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Supply Definition Policies</h3>
+            <p class="size2">On determining the token supply we can decide between 6 scenarios:</p>
+			<p class="m-5"></p>
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+		            <!-- img src="https://icoservice.co/img/icos1.png" /-->
+		            <img class="img-fluid" src="https://gasclick.co/img/monetary_policies.svg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+
+            <p class="size2">On the basic Gold Standard scenario (1), the supply is fixed. No value of price is captured and the token is hyperdeflationary. this is the paradise or investors because they will see the token price growing.</p>
+            <p class="size2">If we match the Total Supply to the Number Collateral Units, the total value of the token will be captured, no matter if this value is created by primary utility (3), which makes the token redeemable, or by aggregated utility, which will create a Unit of Account (4). In the case that we want to capture the fiat price of the collateral, we must manipulate the balance of the pair in the liquidity pools, which is the case of stablecoins (2).</p>
+            <p class="size2">Finally, to capture the natural value of the collateral, as a natural Unit of Account (5), we need to match the traded supply to the number of collateral units. The problem for this case is that the token wont be reedemable.</p>
+			<p class="m-5"></p>
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">Scenario</th>
+						      <th scope="col">Supply</th>
+						      <th scope="col">Pairs</th>
+						      <th scope="col">Capture</th>
+						      <th scope="col">Investors</th>
+						      <th scope="col">Users</th>
+						      <th scope="col">Issuers</th>
+						      <th scope="col">Deflationary</th>
+						      <th scope="col">Redeemable</th>
+						      <th scope="col">Fiat</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">1</th>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">Gold Standard</th>
+						      <td style="vertical-align : middle;text-align:center;">Fixed</td>
+						      <td style="vertical-align : middle;text-align:center;">Any</td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td><i class="fas fa-laugh fa-3x d-flex" style="color:green"></i></td>
+						      <td><i class="fas fa-sad-cry fa-3x" style="color:red"></i></td>
+						      <td><i class="fas fa-meh fa-3x" style="color:orange"></i></td>
+						      <td style="vertical-align : middle;text-align:center;">Hyper</td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td style="vertical-align : middle;text-align:center;">Indep</td>
+						    </tr>
+						    <tr>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">2</th>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">Stablecoin</th>
+						      <td style="vertical-align : middle;text-align:center;" rowspan="3">Total Supply = Num Collateral Units</td>
+						      <td style="vertical-align : middle;text-align:center;">Any</td>
+						      <td style="vertical-align : middle;text-align:center;">Price</td>
+						      <td><i class="fas fa-meh fa-3x d-flex" style="color:orange"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td style="vertical-align : middle;text-align:center;">Yes</td>
+						      <td style="vertical-align : middle;text-align:center;">Dep</td>
+						    </tr>
+						    <tr>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">3</th>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">Reedemable</th>
+						      <td style="vertical-align : middle;text-align:center;">Any</td>
+						      <td style="vertical-align : middle;text-align:center;">Value</td>
+						      <td><i class="fas fa-smile fa-3x d-flex" style="color:#54C571"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td style="vertical-align : middle;text-align:center;">Yes</td>
+						      <td style="vertical-align : middle;text-align:center;">Yes</td>
+						      <td style="vertical-align : middle;text-align:center;">Indep</td>
+						    </tr>
+						    <tr>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">4</th>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">Unit of Account 1</th>
+						      <td style="vertical-align : middle;text-align:center;">Any</td>
+						      <td style="vertical-align : middle;text-align:center;">Agg Value</td>
+						      <td><i class="fas fa-sad-cry fa-3x d-flex" style="color:red"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td><i class="fas fa-smile fa-3x" style="color:#54C571"></i></td>
+						      <td style="vertical-align : middle;text-align:center;">Yes</td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td style="vertical-align : middle;text-align:center;">Indep</td>
+						    </tr>
+						    <tr>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">5</th>
+						      <th scope="row" style="vertical-align : middle;text-align:center;">Unit of Account 2</th>
+						      <td style="vertical-align : middle;text-align:center;">Traded Supply = Num Collateral Units</td>
+						      <td style="vertical-align : middle;text-align:center;">Any</td>
+						      <td style="vertical-align : middle;text-align:center;">Value</td>
+						      <td><i class="fas fa-sad-cry fa-3x d-flex" style="color:red"></i></td>
+						      <td><i class="fas fa-laugh fa-3x" style="color:green"></i></td>
+						      <td><i class="fas fa-meh fa-3x" style="color:orange"></i></td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td style="vertical-align : middle;text-align:center;">No</td>
+						      <td style="vertical-align : middle;text-align:center;">Indep</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <p class="size2">Depending on the goal of every project, a supply definition strategy must be decided. A combination of strategies is also a valid option. The next sections will identify possible combinations of supply definition, collateral nature and capture goals.</p>
+			<p class="m-5"></p>
+
+            <h2 class="size3"><a name="value#value_no" style="padding-top: 90px;"></a>No Capture Tokens</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Utility Tokens</h3>
+			<p class="m-3"></p>
+            <p class="size2">Utility backed tokens are backed by some utility or service, but they do not follow a monetary policy to capture the underlying value or price of this service.</p>
+			<p class="m-5"></p>
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">Token Backing</th>
+						      <th scope="col">Token Backing Type</th>
+						      <th scope="col">Examples</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td scope="row" rowspan="3">Speculative Value</td>
+						      <td>Memecoins</td>
+						      <td>
+						      	<a href="https://www.shibatoken.com/" target="_blank">SHIBA INU</a>, 
+						      	<a href="https://safemoon.com/" target="_blank">SAFEMOON</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Governance</td>
+						      <td>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Algorithmic</td>
+						      <td>
+						      	<a href="https://reflexer.finance/" target="_blank">RAI</a>, 
+						      	<a href="https://www.ampleforth.org/" target="_blank">Ampleforth</a>, 
+						      	<a href="https://www.olympusdao.finance/" target="_blank">Olympus DAO</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td rowspan="5">Objective Utility Token</td>
+						      <td>Play To Earn</td>
+						      <td>
+						      	<a href="https://robotera.io/" target="_blank">RobotEra</a>, 
+						      	<a href="https://tamadoge.io/" target="_blank">TamaDoge</a>,
+						      	<a href="https://swordsofblood.com/" target="_blank">Swords of Blood</a>, <br/>
+						      	<a href="https://securedverse.io/" target="_blank">Securedverse</a>,
+						      	<a href="https://battleinfinity.io/" target="_blank">Battle Infinity</a>,
+						      	<a href="https://decentraland.org/" target="_blank">MANA</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Move To Earn</td>
+						      <td>
+						      	<a href="https://stepn.com/" target="_blank">StepN</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Recycle To Earn</td>
+						      <td>
+						      	<a href="https://www.ecoterra.io/en" target="_blank">Ecoterra</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>PoPW Network</td>
+						      <td>
+						      	<a href="https://www.helium.com/" target="_blank">Helium</a>, 
+						      	<a href="https://www.pollenmobile.io/" target="_blank">Pollen Mobile</a>, 
+						      	<a href="https://dimo.zone/" target="_blank">Dimo</a>, 
+						      	<a href="https://hivemapper.com/" target="_blank">HiveMapper</a>, <br/>
+						      	<a href="https://www.planetwatch.io/" target="_blank">PlanetWatch</a>, 
+						      	<a href="https://filecoin.io/" target="_blank">Filecoin</a>, 
+						      	<a href="https://www.arweave.org/" target="_blank">Arweave</a>	      	
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Social Network</td>
+						      <td>
+						      	<a href="https://basicattentiontoken.org/" target="_blank">BAT</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td rowspan="2">Subjective Virtual Utility Tokens</td>
+						      <td>Play To Own</td>
+						      <td>
+						      	<a href="https://www.luckyblock.com/en" target="_blank">Lucky Block</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>TCR</td>
+						      <td>
+						      	<a href="https://www.reddit.com/coins/mobile" target="_blank">Reddit</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td rowspan="3">Subjective Real Utility Tokens</td>
+						      <td>Exchange</td>
+						      <td>
+						      	<a href="https://uniswap.org/" target="_blank">UNI</a>, 
+						      	<a href="https://pancakeswap.finance/" target="_blank">CAKE</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Supply Chain</td>
+						      <td>
+						      	<a href="https://www.vechain.org/" target="_blank">VET</a>, 
+						      	<a href="https://ambrosus.io/" target="_blank">Ambrosus</a>, 
+						      	<a href="https://agroglobal.network/" target="_blank">Agro Global</a>,
+						      	<a href="https://modultrade.io/" target="_blank">Modultrade</a>,
+						      	<a href="https://gcwine.io/en/" target="_blank">GCWine</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Lending</td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td rowspan="2">Utility Coin</td>
+						      <td>PoW Network</td>
+						      <td>
+						      	<a href="https://bitcoin.org/en/" target="_blank">BTC</a>, 
+						      	<a href="https://litecoin.org/" target="_blank">LTC</a>, 
+						      	<a href="https://dogecoin.com/" target="_blank">DOGE</a>, 
+						      	<a href="https://www.getmonero.org/" target="_blank">XMR</a>, 
+						      	<a href="https://ethereumclassic.org/" target="_blank">ETC</a>,
+						      	<a href="https://bitcoincash.org/" target="_blank">BCH</a>, 
+						      	<a href="https://z.cash/" target="_blank">ZEC</a>, <br/>
+						      	<a href="https://confluxnetwork.org/" target="_blank"></a>CFX,
+						      	<a href="https://ravencoin.org/" target="_blank">RVN</a>,
+						      	<a href="https://ethereumpow.org/" target="_blank">ETHW</a>,
+						      	<a href="https://runonflux.io/" target="_blank">FLUX</a>,
+						      	<a href="https://www.horizen.io/" target="_blank">ZEN</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>PoS Network</td>
+						      <td>
+						      	<a href="https://ethereum.org/en/" target="_blank">ETH</a>,
+						      	<a href="https://www.binance.com/en/bnb" target="_blank">BNB</a>, 
+						      	<a href="https://polygon.technology/" target="_blank">MATIC</a>,  
+						      	<a href="https://solana.com/" target="_blank">SOL</a>,
+						      	<a href="https://cardano.org/" target="_blank">ADA</a>
+						      </td>
+						    </tr>
+						  </tbody>
+						</table>
+					
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+			
+            <h2 class="size3"><a name="value#price_capture" style="padding-top: 90px;"></a>Price Capture Tokens</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Stablecoins</h3>
+			<p class="m-3"></p>
+            <p class="size2">Stablecoins peg their price to the price of an underlying asset. This underlying asset can be a commodity, a fiat currency, a financial product or another cryptocurrency. They can be collateralized by the same asset (stablecoins), by another asset or basket of assets (synths) or by an algorithm (algorithmic stablecoins).</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">Peg Type</th>
+						      <th scope="col">Peg Asset</th>
+						      <th scope="col">Collateral</th>
+						      <th scope="col">Examples</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td rowspan="12">Fiat Stablecoins</td>
+						      <td rowspan="6">dollar</td>
+						      <td>Real State</td>
+						      <td>
+						      	<a href="https://www.tangible.store/" target="_blank">Real USD</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Dollar</td>
+						      <td>
+						      	<a href="https://www.tusd.io/trueusd" target="_blank">TrueUSD</a>, 
+						      	<a href="https://stablecoin.z.com/zusd/" target="_blank">ZUSD</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Basket</td>
+						      <td>
+						      	<a href="https://tether.to/en/transparency/#usdt" target="_blank">USDT</a>, 
+						      	<a href="https://www.circle.com/en/usdc" target="_blank">USDC</a>, 
+						      	<a href="https://www.binance.com/en/busd" target="_blank">BUSD</a>,
+						      	<a href="https://frax.finance/" target="_blank">FRAX</a>, 
+						      	<a href="https://abracadabra.money/" target="_blank">MIM</a>,<br/> 
+						      	<a href="https://paxos.com/usdp/" target="_blank">Pax Dollar</a>,
+						      	<a href="https://just.network/" target="_blank">USDJ</a>, 
+						      	<a href="https://www.gemini.com/dollar" target="_blank">Gemini USD</a>,
+						      	<a href="https://paxos.com/usdp/" target="_blank">USDP</a>,
+						      	<a href="https://www.palaugov.pw/stablecoin/" target="_blank">Palau</a>,
+						      	<a href="https://firstdigitallabs.com/" target="_blank">FDUSD</a>,
+						      	<a href="https://www.paypal.com/us/digital-wallet/manage-money/crypto/pyusd" target="_blank">PYUSD</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Basket Crypto</td>
+						      <td>
+						      	<a href="https://makerdao.com/" target="_blank">DAI</a>, 
+						      	<a href="https://celo.org/" target="_blank">CUSD</a>, 
+						      	<a href="https://usdd.io/#/" target="_blank">USDD</a>, 
+						      	<a href="https://stabolut.com/" target="_blank">USB</a>,
+						      	<a href="https://www.ethena.fi/" target="_blank">USDe</a>,
+						      	<a href="https://raft.fi/" target="_blank">Raft</a>,
+						      	<a href="https://lybra.finance/" target="_blank">eUSD</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Endogenous Crypto</td>
+						      <td>
+						      	<a href="https://www.terra.money/" target="_blank">TerraUSD</a>, 
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Algorithm</td>
+						      <td>
+						      	<a href="https://fei.money/" target="_blank">Fei</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>euro</td>
+						      <td>euro</td>
+						      <td><a href="https://www.circle.com/en/euro-coin" target="_blank">EUROC</a></td>,
+						      <td><a href="https://www.euroe.com/" target="_blank">EUROe</a></td>
+						    </tr>
+						    <tr>
+						      <td>pound</td>
+						      <td>pound</td>
+						      <td><a href="https://poundtoken.io/" target="_blank">GBPT</a></td>
+						    </tr>
+						    <tr>
+						      <td>Singapur Dollar</td>
+						      <td>Singapur Dollar</td>
+						      <td><a href="https://www.straitsx.com/xsgd" target="_blank">XSGD</a></td>
+						    </tr>
+						    <tr>
+						      <td>rupiah</td>
+						      <td></td>
+						      <td>
+						      	<a href="" target="_blank">IDRT</a>,
+						      	<a href="https://www.tokocrypto.com/" target="_blank">BIDR</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Brazil Real</td>
+						      <td></td>
+						      <td><a href="https://www.brztoken.io/" target="_blank">BRZ</a></td>
+						    </tr>
+						    <tr>
+						      <td>mex peso</td>
+						      <td></td>
+						      <td><a href="https://tether.to/en/transparency/#mxnt" target="_blank">MXNT</a></td>
+						    </tr>
+						    <tr>
+						      <td rowspan="5">Financial Products Stablecoins</td>
+						      <td>Inflation Indep Index</td>
+						      <td>Crypto</td>
+						      <td>
+						      	<a href="https://nuon.fi/" target="_blank">Nuon</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>US Treasuries</td>
+						      <td>US Treasuries</td>
+						      <td>
+						      	<a href="https://ondo.finance/ousg" target="_blank">OUSG</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>US Treasuries Collateralized Notes</td>
+						      <td>US Treasuries Collateralized Notes</td>
+						      <td>
+						      	<a href="https://ondo.finance/usdy" target="_blank">USDY</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Short-term Bonds</td>
+						      <td>Short-term Bonds</td>
+						      <td>
+						      	<a href="https://ondo.finance/ostb" target="_blank">OSTB</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>HY Corporate Bonds</td>
+						      <td>HY Corporate Bonds</td>
+						      <td>
+						      	<a href="https://ondo.finance/ohyg" target="_blank">OHYG</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Crypto Stablecoins</td>
+						      <td>ETH</td>
+						      <td>ETH</td>
+						      <td>
+						      	<a href="https://frax.finance/" target="_blank">frxETH</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td rowspan="5">Commodities Stablecoins</td>
+						      <td>Gold</td>
+						      <td>Gold</td>
+						      <td>
+						      	<a href="https://paxos.com/paxgold/" target="_blank">PAXG</a>, 
+						      	<a href="https://www.goldario.com/" target="_blank">GLD</a>, 
+						      	<a href="https://meld.gold/" target="_blank">MCAU</a>, 
+						      	<a href="https://aabbgoldtoken.com/aabbg/" target="_blank">AABBG</a>, 
+						      	<a href="https://novemgold.com/en/tokens/nnn.html" target="_blank">NNN</a>,<br/>
+						      	<a href="https://www.agagoldy.com/" target="_blank">AWG</a>, 
+						      	<a href="https://pmgt.io/" target="_blank">PMGT</a>, 
+						      	<a href="https://cashtelex.com/" target="_blank">CTLX</a>, 
+						      	<a href="https://gold.tether.to/" target="_blank">XAUT</a>, 
+						      	<a href="https://digix.global/dgx" target="_blank">DGX</a>, 
+						      	<a href="https://cache.gold/" target="_blank">CACHE</a>,
+						      	<a href="https://www.rbz.co.zw/documents/Gold-backed_Digital_Token/August/RBZ_Gold-backed_Digital_Tokens_Issue_12_Results_03_August_2023.pdf" target="_blank">RBZ GBDT</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Gold</td>
+						      <td>PAXG</td>
+						      <td>
+						      	<a href="https://godl.gold" target="_blank">GODL</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Silver</td>
+						      <td>Silver</td>
+						      <td>
+						      	<a href="" target="_blank">SLVT</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Oil</td>
+						      <td>Oil</td>
+						      <td>
+						      	<a href="http://crudeoil.finance/" target="_blank">CRUDE</a>, 
+						      	<a href="https://pdxcoin.io/" target="_blank">PDX</a>, 
+						      	<a href="https://www.petro.gob.ve/en/" target="_blank">PTR</a>,
+						      	<a href="https://finamatrix.net/fix/" target="_blank">FIX</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Food</td>
+						      <td>Food</td>
+						      <td>
+						      	<a href="https://www.cyberkongz.com/" target="_blank">BANANA</a>
+						      </td>
+						    </tr>
+						  </tbody>
+						</table>
+					
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+	
+            <h3 class="blue">Security Tokens</h3>
+			<p class="m-3"></p>
+            <p class="size2">Security tokens are digital assets that represent ownership or other rights to transfer value from an asset or asset class to a token. A security token is essentially a digital form of traditional securities. Tokenised securities, better known as security tokens, are regulated and compliant investment assets in the form of a cryptocurrency token.</p>
+			<p class="m-5"></p>	
+			
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">Type</th>
+						      <th scope="col">Asset</th>
+						      <th scope="col">Marketplace</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>Real Assets Securities</td>
+						      <td>Real State / REITS</td>
+						      <td>
+						      	<a href="https://landshare.io/" target="_blank">Landshare</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Equity Securities</td>
+						      <td>Shares / Stocks</td>
+						      <td>
+						      	<a href="https://stomarket.com/" target="_blank">Stomarket</a>,
+						      	<a href="https://www.brickken.com/" target="_blank">Brickken</a>,
+						      	<a href="https://inqubeta.ai/" target="_blank">InQubeta</a>,
+						      	<a href="https://securitize.io/" target="_blank">Securitize</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Debt Securities</td>
+						      <td>Bonds</td>
+						      <td>
+						      	<a href="https://www.obligate.com/" target="_blank">Obligate</a>
+						      </td>
+						    </tr>
+						    <tr>
+						      <td>Derivative Securities</td>
+						      <td>Options</td>
+						      <td></td>
+						    </tr>
+						  </tbody>
+						</table>
+						
+					</div>
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <h2 class="size3"><a name="value#value_capture" style="padding-top: 90px;"></a>Value Capture Tokens</h2>
+            <div class="line"></div>			
+			<p class="m-5"></p>
+
+            <h3 class="blue">Units of Account</h3>
+			<p class="m-3"></p>
+            <p class="size2">Value Capture Tokens capture the underlying value by matching their supply with number of units captured and leaving the price floating free. Tokens capturing value are considered Unit of Account or Commodity backed Money.</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+			    	<div class="table-responsive">
+
+		               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+						  <thead class="thead-dark">
+						    <tr>
+						      <th scope="col">Token Backing</th>
+						      <th scope="col">Token Subtype</th>
+						      <th scope="col">Asset</th>
+						      <th scope="col">Examples</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>Asset Value Capture Tokens</td>
+						      <td>Averaged Value Capture</td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <td>Utility Capture Tokens</td>
+						      <td></td>
+						      <td></td>
+						      <td></td>
+						    </tr>
+						  </tbody>
+						</table>
+
+					</div>	
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <h2 class="size3"><a name="value#tmm" style="padding-top: 90px;"></a>Tokenization Maturity Model</h2>
+            <div class="line"></div>			
+			<p class="m-5"></p>
+
+            <p class="size2">A Tokenization Maturity Model could be established as a ranking of the purity in capturing the properties of the underlying asset. This model would not evaluate the value of the asset, or its utilities within the token model, but the ability of the capture process. The main criteria for this maturity model would be:</p>
+            <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Decentralization in the network consensus. Existing great work by <a href="https://a16zcrypto.com/posts/article/decentralization-factors-web3-protocols-tables/">a16z</a> for protocols decentralization should be referenced here</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Decentralization in the smart contract </li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Independence from other currencies</li>
+			</ul>
+            <p class="size2">In that way, 2 tokenization protocols capturing gold as underlying asset, could be at different level of maturity depending on the goods of the designed protocol.</p>
+            <p class="size2">The picture below represents a initial structure of the maturity model. It only considers the goal of the capture process. Sub-levels could be established to accommodate different degrees of issuer intervention.</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+		            <!-- img src="https://icoservice.co/img/icos1.png" /-->
+		            <img class="img-fluid" src="https://www.catallactic.org/img/tokenization_maturity_model.svg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+            <p class="size2">Commodity Money would be at the highest level of the maturity Model as its value matches the value of the underlying asset. However, attention should be paid on the decentralization guaranteed by the processes of the issuer.</p>
+			<p class="m-5"></p>
+		        
+            <div class="row my-5 py-5">
+                <div class="col-12 col-lg-6">
+	                <a href="https://gasclick.net/whitepaper_2tokenization.html">
+						<div class="card h-100 my-3">
+						  <div class="card-body row">
+						  	<div class="col-3 d-flex align-items-center justify-content-start">
+		            			<h1 class="color-wp1"><i class="fa fa-fw fa-arrow-left fa-3x"></i></h1>						  	
+						  	</div>
+						  	<div class="col-9 text-end my-auto">
+		            			<h5 class="color-wp1">Prev</h5>
+						    	<p class="card-title color-wp1">Tokenization to the Rescue</p>				  	
+						  	</div>
+						  </div>
+						</div>
+					</a>
+                </div>
+                <div class="col-12 col-lg-6">
+	                <a href="https://gasclick.net/whitepaper_4market.html">
+						<div class="card h-100 my-3">
+						  <div class="card-body row">
+						  	<div class="col-9 text-start my-auto">
+		            			<h5 class="color-wp1">Next</h5>
+						    	<p class="card-title color-wp1">Market Analysis</p>				  	
+						  	</div>
+						  	<div class="col-3 d-flex align-items-center justify-content-end">
+		            			<h1 class="color-wp1"><i class="fa fa-fw fa-arrow-right fa-3x"></i></h1>						  	
+						  	</div>						  
+						  </div>
+						</div>
+					</a>
+				</div>
+	        </div>
+            
+        </div>
+
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="sidebar-right background-wp1">
+
+        </nav>
+            
+    </div>
+    
+	<footer class="background-theme2">
+		<div class="container">
+			<div class="row g-3 pt-4">
+				<div class="col-12 col-lg-3">
+					<div><img src="https://gasclick.co/img/logo.png" height="64" /></div>
+					<div class="py-3 color-theme-reverse2">Merging the new cryptoeconomy and the traditional economy. By leveraging the value already existing on LPG consumption, we tokenize, capture it and offer to worldwide investors. A match made in heaven.</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<ul class="list-unstyled">
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="index.html" role="menu">PLATFORM</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="token.html" role="menu">TOKEN</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="project.html" role="menu">PROJECT</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="whitepaper.html" role="menu">WHITEPAPER</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="investors.html" role="menu">TOKEN SALES</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="contactenos.html" role="menu"><div id="google_translate_element"></div></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<ul class="list-unstyled">
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://docs.google.com/presentation/d/1vrQLlON05ywUoUDJFhOax4Q7iJf0x-zQBmtZll-rX3s/edit#slide=id.g1f87997393_0_782" role="menu" target="_blank">Pitch Deck</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://gasclick.net/litepaper_en.html" role="menu" target="_blank">Litepaper</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://www.catallactic.org/" role="menu" target="_blank">Catallactic</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="legal_terms.html" role="menu" target="_blank">TERMS</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="legal_privacy_consumer.html" role="menu" target="_blank">PRIVACY</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 color-theme-reverse2">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="fs-6"><b>GasClick Global</b><br />
+								Edificio Platinum Plaza<br/>Torre 1, piso 11<br/>Calle Dean Valdivia 148<br/>San Isidro, Lima 27</br/>Lima, Perú<br/>
+								<img src="https://gasclick.co/img/ico_mail-h.png"> <a href="mailto:info@gasclick.net" class="color-theme-reverse2 text-decoration-none">info@gasclick.net</a>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="fs-6"><b>ClassifiApps Ltd</b><br />
+								51 Carlisle Offices<br/>Bracken Road<br/>Sandyford<br/>D18 CV48</br/>Dublin, Ireland<br/>
+								<img src="https://gasclick.co/img/ico_mail-h.png"> <a href="mailto:info@gasclick.net" class="color-theme-reverse2 text-decoration-none">info@gasclick.net</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="border-theme-reverse2">
+			<p class="text-center fs-6 fw-bold color-theme-reverse2 pb-4">&copy; Copyright 2023 GasClick Global by ClassifiApps Ltd. All Rights Reserved</p>
+		</div>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({includedLanguages: 'ar,de,en,es,fa,fr,hy,hi,id,it,ja,ko,nl,pl,pt,ru,so,tr,uk,vi,zh,zh-TW'}, 'google_translate_element');
+		  
+		  let lang = document.location.href.indexOf("googtrans") > -1 ? document.location.href.substring(document.location.href.indexOf("googtrans")+10) : "en";
+	 	  let icons = {'ar':'sa','zh-TW':'cn','nl':'nl','en':'us','fr':'sa','de':'de','hi':'in','id':'id','it':'it','ja':'jp','ko':'kr','fa':'ir','pt':'pt','ru':'ru','sk':'sk','es':'es','tr':'tk','tw':'tw','uk':'ua','vi':'vn'};
+		  $('button .flag-icon').attr('class', function(i, c){
+		    return c.replace(/(^|\s)flag-icon-\S+/g, ' flag-icon-' + icons[lang]);
+		  });
+		}
+		function translateLanguage(lang) {
+		  window.location = "#googtrans/" + lang;
+		  location.reload();
+		}
+	</script>
+
+</body>
+
+</html>

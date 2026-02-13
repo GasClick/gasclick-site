@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Floating Icons</title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+   </head>
+   <body>
+   
+      <style media="screen">
+		.social-media{
+		  align-items: center;
+		  display: flex;
+		  transition: transform 0.3s ease-in-out;
+		}
+		.social-media:hover{
+		  transform: translateX(calc(-100% + 60px));
+		}		
+		.social-media i{
+		  color: #fff;
+		  font-size: 20px;
+		  padding: 15px;
+		  text-align: center;
+		  width: 50px;
+		}
+		.social-media a{
+		  color: #fff;
+		  padding: 0 10px;
+		  text-align: center;
+		  text-decoration: none;
+		}
+		.social-media-container{
+		  top: 50%;
+		  list-style-type: none;
+		  padding: 0;
+		  position: fixed;
+		  left: calc(100% - 60px);
+		  transform: translateY(-50%);
+		  min-width: 150px;
+		}
+		.social-media.blog{
+		  background-color: #014592;
+		}
+		.social-media.pinterest{
+		  background-color: #bd081c;
+		}
+		.social-media.linkedin{
+		  background-color: #007;
+		}
+		.social-media.instagram{
+		  background-color: #c13584;
+		}
+		.social-media.github{
+		  background-color: #333;
+		}
+      </style>
+	<ul class="social-media-container">
+	  <li class="social-media pinterest">
+	    <i class="fab fa-pinterest"></i>
+	    <a href="https://www.pinterest.com/fr/" target="_blank">Pinterest</a>
+	  </li>
+	  <li class="social-media linkedin">
+	    <i class="fab fa-linkedin-in"></i>
+	    <a href="https://www.linkedin.com/fr/" target="_blank">Linkedin</a>
+	  </li>
+	  <li class="social-media instagram">
+	    <i class="fab fa-instagram"></i>
+	    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+	  </li>
+	  <li class="social-media github">
+	    <i class="fab fa-github"></i>
+	    <a href="https://github.com/liloo2040" target="_blank">Github</a>
+	  </li>
+	  <li class="social-media blog">
+	    <i class="fas fa-laptop-code"></i>
+	    <a href="#" target="_blank">Forum</a>
+	  </li>
+	</ul>
+	      
+      
+      
+      
+   </body>
+</html>

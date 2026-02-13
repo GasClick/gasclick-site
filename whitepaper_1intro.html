@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:url"           		content="https://gasclick.net" />
+	<meta property="og:image"         		content="https://gasclick.net/images/promo/banner_gasclick7.png" />
+	<meta property="fb:app_id"         		content="190421111397713"/>
+	<meta property="og:type"          		content="website" />
+	<meta property="og:title"         		content="GasClick" />
+	<meta property="og:description"   		content="Energizing the world | Commodity money based on LPG." />
+
+    <title>CryptoGas Whitepaper</title>
+    
+   	<link rel="icon" href="favicon.png">
+
+    <!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	<link rel="stylesheet" href="https://gasclick.co/css/whitepaper.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/css.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_light.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_default.css">
+	<link rel="stylesheet" href="https://gasclick.co/css/global_dark.css">
+
+    <!-- Custom Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+    <style>
+	/* Google Translate Overrides */
+	html, body{
+	    min-height: 0!important;
+	    height: auto!important;
+	    position: inherit!important;
+	}
+    </style>
+    
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NSBD2M11J"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-6NSBD2M11J');
+	</script>
+    
+</head>
+
+<body style="padding-top: 65px;">
+
+	<nav class="navbar navbar-expand-xxl navbar-dark fixed-top px-5 fs-4" style="z-index:10;">
+		<a class="navbar-brand" href="index.html"><img src="https://gasclick.co/img/logo.png" height="50" /></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mx-auto my-5 my-xxl-0">
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="index.html">PLATFORM</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="token.html">$CRYPTOGAS</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="investors.html">INVESTORS</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse2" href="project.html">PROJECT</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+				<li class="nav-item"><a class="nav-link mx-4 my-3 my-xxl-0 fw-bold color-theme-reverse1" href="whitepaper_9investors.html">WHITEPAPER</a><hr class="d-xxl-none color-theme-reverse2"/></li>
+			</ul>
+			<ul class="navbar-nav mx-auto">
+				<style>
+					.colors {
+					  position: relative;
+					  display: inline-block;
+					}
+					.colors-content {
+					  display: none;
+					  position: absolute;
+					  background-color: #f9f9f9;
+					  min-width: 160px;
+					  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					  padding: 12px 16px;
+					  z-index: 1;
+					}
+					.colors:hover .colors-content {
+					  display: block;
+					}
+				</style>
+				<div class="btn-group dropdown-center mr-3">
+					<button type="button" class="btn btn-default" data-bs-toggle="dropdown">
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css" />
+				    	<span class="fa fa-eye fa-3x color-theme-reverse2"></span>
+				  	</button>
+					<ul class="dropdown-menu scrollable-menu background-gradient1 color-theme-reverse2 p-0 m-0 border-radius-10 hand" role="menu" onchange="translateLanguage(this.value);">
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2"></span> Choose skin</li>
+						<li class="dropdown-divider background-gradient1 color-theme-reverse2"></li>
+						<li id="color-default" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('default');$(this).addClass('active').siblings().removeClass('active');"> Default</li>
+						<li class="dropdown-divider background-gradient1 color-theme-reverse2"></li>
+						<li id="color-white" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('white');$(this).addClass('active').siblings().removeClass('active');"> White</li>
+						<li id="color-light" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('light');$(this).addClass('active').siblings().removeClass('active');"> Light</li>
+						<li id="color-gold" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('gold');$(this).addClass('active').siblings().removeClass('active');"> Gold</li>
+						<li id="color-dark" class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="toggle('dark');$(this).addClass('active').siblings().removeClass('active');"> Dark</li>
+				  </ul>
+				</div>
+				<script>
+					window.onload=function() {
+						var theme = localStorage.getItem('data-theme');
+						if (theme === null)
+							return;
+						$( "#color-" + theme).addClass('active');
+						toggle(theme);
+					}
+					function toggle(theme) {
+						document.documentElement.setAttribute('data-theme', theme);
+						localStorage.setItem('data-theme', theme);
+					};
+				</script>
+				
+				<div class="btn-group dropdown mr-3">
+					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/css/flag-icon.min.css" />
+					<button type="button" class="btn btn-default" data-bs-toggle="dropdown">
+				    	<span class="flag-icon flag-icon-us h2 m-0"></span>
+				  	</button>
+					<ul id='languages' class="dropdown-menu scrollable-menu background-theme-transparent p-0 m-0" role="menu" onchange="translateLanguage(this.value);">
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ar');"><span class="flag-icon flag-icon-sa mr-2"></span> Arabic</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('zh-TW');"><span class="flag-icon flag-icon-cn mr-2"></span> Chinese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('nl');"><span class="flag-icon flag-icon-nl mr-2"></span> Dutch</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('en');"><span class="flag-icon flag-icon-us mr-2"></span> English</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('fr');"><span class="flag-icon flag-icon-fr mr-2"></span> French</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('de');"><span class="flag-icon flag-icon-de mr-2"></span> German</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('hi');"><span class="flag-icon flag-icon-in mr-2"></span> Hindi</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('id');"><span class="flag-icon flag-icon-id mr-2"></span> Indonesian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('it');"><span class="flag-icon flag-icon-it mr-2"></span> Italian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ja');"><span class="flag-icon flag-icon-jp mr-2"></span> Japanese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ko');"><span class="flag-icon flag-icon-kr mr-2"></span> Korean</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('fa');"><span class="flag-icon flag-icon-ir mr-2"></span> Persian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('pt');"><span class="flag-icon flag-icon-pt mr-2"></span> Portuguese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('ru');"><span class="flag-icon flag-icon-ru mr-2"></span> Russian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('sk');"><span class="flag-icon flag-icon-sk mr-2"></span> Slovak</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('es');"><span class="flag-icon flag-icon-es mr-2"></span> Spanish</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('tr');"><span class="flag-icon flag-icon-tk mr-2"></span> Turkish</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('tw');"><span class="flag-icon flag-icon-tw mr-2"></span> Taiwanese</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('uk');"><span class="flag-icon flag-icon-ua mr-2"></span> Ukrainian</li>
+						<li class="dropdown-item background-theme3 background-gradient1 color-theme-reverse2 py-2" onclick="translateLanguage('vi');"><span class="flag-icon flag-icon-vn mr-2"></span> Vietnamese</li>
+					</ul>
+				</div>
+			</ul>
+   			<ul class="nav navbar-nav pull-sm-right">
+				<li class="nav-item my-auto h4"><a href="https://gasclick.net/litepaper_en.html" class="btn color-theme-reverse2 fw-bold border border-1 border-radius-10 fs-5 p-2" >ADD TO WHITELIST</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<style media="screen">
+		.social-media{
+		  align-items: center;
+		  display: flex;
+		  transition: transform 0.3s ease-in-out;
+		}
+		.social-media:hover{
+		  transform: translateX(calc(-100% + 60px));
+		}		
+		.social-media a{
+		  color: #fff;
+		  padding: 0 10px;
+		  text-align: center;
+		  text-decoration: none;
+		  width: 100px;
+		}
+		.social-media span{
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		}
+		.social-media-container li .fab, .social-media-container li .fas {
+		  display: block;
+		  width: 50px;
+		  text-align: center;
+		  float: right;
+		  font-size: 30px;
+		  line-height: 50px;
+		  color: #EFEFEF;
+		}
+		.social-media-container{
+		  top: 50%;
+		  list-style-type: none;
+		  padding: 0;
+		  position: fixed;
+		  left: calc(100% - 50px);
+		  transform: translateY(-50%);
+		  min-width: 150px;
+		  z-index: 2000;
+		}
+		
+		.social-media.twitter { background-color: #0099d4; }
+		.social-media.twitter .fab { background-color: #00aced; }
+		.social-media.pinterest { background-color: #b51d23; }
+		.social-media.pinterest .fab { background-color: #cb2027; }
+		.social-media.linkedin { background-color: #006a9d; }
+		.social-media.linkedin .fab { background-color: #007bb6; }
+		.social-media.instagram { background-color: #497293; }
+		.social-media.instagram .fab { background-color: #517fa4; }
+		.social-media.github { background-color: #333; }
+		.social-media.github .fab { background-color: #484848; }
+		.social-media.blog { background-color: #014592; }
+		.social-media.blog .fas { background-color: #0F52BA; }
+	</style>
+	<ul class="social-media-container">
+	  <li class="social-media twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/GasClick" target="_blank"><span>Twitter</span></a></li>
+	  <li class="social-media linkedin"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/company/35436965" target="_blank"><span>Linkedin</span></a></li>
+	  <li class="social-media github"><i class="fab fa-github"></i><a href="https://github.com/GasClick" target="_blank"><span>Github</span></a></li>
+	  <li class="social-media blog"><i class="fas fa-laptop-code"></i><a href="https://cryptonomics.network/" target="_blank"><span>Forum</span></a></li>
+	</ul>
+
+    <div class="wrapper">
+
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="background-wp2">
+            <div class="sidebar-header background-wp3">
+                <h3 class="text-center size5">Whitepaper</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="pt-5 pb-2">
+                    <a href="#introSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase background-wp3 light-grey">The abandoned road</a>
+                    <ul class="collapse show list-unstyled" id="introSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#money" class="background-wp3 light-grey">The evolution of Money</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#price" class="background-wp3 light-grey">The price formation machine</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#road" class="background-wp3 light-grey">The abandoned road</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#where" class="background-wp3 light-grey">Where we are?</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_1intro.html#intro#private" class="background-wp3 light-grey">Privately Issued Currencies</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#tokenizationSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase light-grey">Tokenization to the Rescue</a>
+                    <ul class="collapse list-unstyled" id="tokenizationSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#currency_tool" class="light-grey">Definition of Money</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#t10n" class="light-grey">Tokenization</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_2tokenization.html#t10n#crowdsolving" class="light-grey">Crowdsolving Problems</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#frameworkSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase light-grey">Capturing Value</a>
+                    <ul class="collapse list-unstyled" id="frameworkSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value" class="light-grey">Token Value (Demand)</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#capture" class="light-grey">Monetary Policies (Supply)</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value_no" class="light-grey">No Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#price_capture" class="light-grey">Price Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#value_capture" class="light-grey">Value Capture Tokens</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_3value.html#value#tmm" class="light-grey">Tokenization Maturity Model</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#marketSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Market Analysis</a>
+                    <ul class="collapse list-unstyled" id="marketSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPG" class="dark-grey">LPG</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPGRetailChain" class="dark-grey">LPG Retail Value Chain</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#LPGEcosystem" class="dark-grey">Ecosystem</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_4market.html#market#BioLPG" class="dark-grey">The BioGas Transition</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#collectionSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">GasClick Platform</a>
+                    <ul class="collapse list-unstyled" id="collectionSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Platform Vision</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Products</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_5platform.html#collectionSubmenu#personal" class="dark-grey">Platform Features</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#accessubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">CRYPTOGAS Engineering</a>
+                    <ul class="collapse list-unstyled" id="accessubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#tokenizing" class="dark-grey">Tokenizing Energy</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#core" class="dark-grey">CRYPTOGAS Core Value</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#extended" class="dark-grey">CRYPTOGAS Extended Value</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_6token.html#token#arch" class="dark-grey">CRYPTOGAS Architecture</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#tokenomicsSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">CRYPTOGAS Monetary Policy</a>
+                    <ul class="collapse list-unstyled" id="tokenomicsSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#supply" class="dark-grey">Token Supply</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#distribution" class="dark-grey">Token Distribution</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#allocation" class="dark-grey">Token Allocation</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_7tokenomics.html#tokenomics#tax" class="dark-grey">Transaction Taxes</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#roadmapSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Project Roadmap</a>
+                    <ul class="collapse list-unstyled" id=roadmapSubmenu>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#scope" class="dark-grey">Geographical Scope</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#country" class="dark-grey">Deploying a Country</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#penetration" class="dark-grey">Market penetration</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#defi" class="dark-grey">Common DeFi Services</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_8roadmap.html#roadmap#challenges" class="dark-grey">Challenges</a></li>
+                    </ul>
+                </li>
+                <li class="py-2">
+                    <a href="#cookiesSubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-uppercase dark-grey">Investors Value</a>
+                    <ul class="collapse list-unstyled" id="cookiesSubmenu">
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#ico" class="dark-grey">ICO Investors</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#price" class="dark-grey">Price Estimation</a></li>
+                        <li><a href="https://gasclick.net/whitepaper_9investors.html#investors#value" class="dark-grey">Value Capture Estimation</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="http://gasclick.net/token.html" class="background-wp3 light-grey">Back to Web</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar sidebar-navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="sidebar-navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    
+ 					<div class="btn-group">
+					  <button type="button" class="btn dropdown-toggle background-wp3 color-wp1 border-wp1" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+					    Introduction
+					  </button>
+					  <div class="dropdown-menu dropdown-menu-right">
+					    <a class="dropdown-item" href="#"><b>Navigation</b></a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item background-wp3" href="https://gasclick.net/whitepaper_1intro.html">Introduction</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_3market.html">Market Analysis</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_4platform.html">GasClick Platform</a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_5token.html">Token Engineering</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_6tokenomics.html">Tokenomics</a>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_7roadmap.html">Project Roadmap</a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item" href="https://gasclick.net/whitepaper_9investors.html">Investors Value</a>
+					  </div>
+					</div>
+
+                </div>
+            </nav>
+            
+            <h1 class="text-center size5">Introduction</h1>
+            <p class="text-center">Last modification 04/04/2023</p>
+            
+            <h2 class="size3"><a name="intro#money" style="padding-top: 90px;"></a>The evolution of Money</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>      
+
+			<div class="p-0">
+
+			  <style>
+			  	.nav-link.active { 
+				    color: #000!important; 
+				    font-weight: bold;
+				}
+			  </style>
+			  <div class="nav nav-tabs row p-0 m-0 navbar-dark" style="background-color: #eceff1;" id="nav-tab" role="tablist">
+			    <button class="nav-link link-secondary col p-1" id="barter-tab" data-bs-toggle="tab" data-bs-target="#barter" type="button" role="tab" aria-controls="barter" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_barter_128.png" /><div>Barter System</div></button>
+			    <button class="nav-link link-secondary col p-1" id="commodity-tab" data-bs-toggle="tab" data-bs-target="#commodity" type="button" role="tab" aria-controls="commodity" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_commodity_128.png" /><div>Commodity</div></button>
+			    <button class="nav-link link-secondary col p-1" id="metal-tab" data-bs-toggle="tab" data-bs-target="#metal" type="button" role="tab" aria-controls="metal" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_metal_128.png" /><div>Metal Money</div></button>
+			    <button class="nav-link link-secondary col p-1 active" id="backed-tab" data-bs-toggle="tab" data-bs-target="#backed" type="button" role="tab" aria-controls="metal" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_backed_128.png" /><div>Backed Money</div></button>
+			    <button class="nav-link link-secondary col p-1" id="fiat-tab" data-bs-toggle="tab" data-bs-target="#fiat" type="button" role="tab" aria-controls="fiat" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_fiat_128.png" /><div>Fiat Money</div></button>
+			    <button class="nav-link link-secondary col p-1" id="plastic-tab" data-bs-toggle="tab" data-bs-target="#plastic" type="button" role="tab" aria-controls="plastic" aria-selected="false"><img class="img-fluid" src="https://gasclick.co/img/money_type_plastic_128.png" /><div>Plastic Money</div></button>
+			    <button class="nav-link link-secondary col p-1" id="crypto-tab" data-bs-toggle="tab" data-bs-target="#crypto" type="button" role="tab" aria-controls="crypto" aria-selected="true"><img class="img-fluid" src="https://gasclick.co/img/money_type_crypto_128.png" /><div>Crypto Money</div></button>
+			  </div>
+		      
+		      <div class="tab-content border border-1" id="tabContent">
+		        <div class="tab-pane fade" id="barter" role="tabpanel" aria-labelledby="barter-tab">
+			        <h1 class="text-center size3 p-3">Barter System</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>The most simple way of exchange</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Goods or services are exchanged against other good or services</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Functionality determined by hunter gatherer, humans on old ages</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">98000 BC till 900BC</li>
+									<li class="checklist">Still practiced today in rare forms</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">Fish against a wheat bag</li>
+									<li class="checklist">Mammoth against Axe</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Problem solving and exchange innovation</li>
+									<li class="checklist">No middle man needed</li>
+									<li class="checklist">Exchange by occupation</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Laborious</li>
+									<li class="checklist">No common measure of value</li>
+									<li class="checklist">Problems of storage</li>
+									<li class="checklist">Indivisibility of certain goods</li>
+									<li class="checklist">No sufficient store of value</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade" id="commodity" role="tabpanel" aria-labelledby="commodity-tab">
+			        <h1 class="text-center size3 p-3">Commodity Money</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>As the barter system, cannot store value commodities that don't get foul were stored</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Commodities should be possible to store for a long time and be limited in quantity / quality </li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Expensive and labor extensive store commodities such as salt</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">High phase 6000 BC till 500AD</li>
+									<li class="checklist">Still today a way to store value in commodities that do not get foul such as Oil and Grain</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">Salt in Rome 80BC - 400AD)</li>
+									<li class="checklist">Tobacco in Virginia 1708 - 1860)</li>
+									<li class="checklist">Cattle in India, Sugar in Brazil, Rice in Carolina, Tea in Mongolia</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Better way to exchange value than barter</li>
+									<li class="checklist">Right measurement</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Space intensive</li>
+									<li class="checklist">No universal acceptability</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade" id="metal" role="tabpanel" aria-labelledby="metal-tab">
+			        <h1 class="text-center size3 p-3">Metal Money</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Humans found a better store as Metals and Precious Metals</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Already used for armors and tools</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Inherently valuable and scarce</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Gold backed IOUs: Goldsmiths stored gold to give people a share with which was exchange possible</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Legal tender coinage: first pressed money in coins (issue debasement)</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">High phase 600 BC till today</li>
+									<li class="checklist">Till today an determined way to store value and exchange also</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">Ancient Greece, Lydians 600BC) </li>
+									<li class="checklist">16th to 17th century Goldsmiths in England</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Scarce and Supply limited</li>
+									<li class="checklist">Solid</li>
+									<li class="checklist">Store of value valu measurement</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Debasement because mixed</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade show active" id="backed" role="tabpanel" aria-labelledby="backed-tab">
+			        <h1 class="text-center size3 p-3">Commodity Backed or Representative Money</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Occurred because gold and silver merchants or banks would issue receipts to their depositors, redeemable for the commodity money deposited</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>These receipts became generally accepted as a means of payment and were used as money.</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>The gold standard, a monetary system where the medium of exchange are paper notes that are convertible into pre-set, fixed quantities of gold, replaced the use of gold coins as currency in the 17th–19th centuries in Europe.</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">High phase 600 BC till today</li>
+									<li class="checklist">Banknotes were first issued in Europe by Stockholms Banco in 1661.</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">Paper money or banknotes were first used in China during the Song dynasty.</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Fungible</li>
+									<li class="checklist">Durable</li>
+									<li class="checklist">Divisible</li>
+									<li class="checklist">Portable</li>
+									<li class="checklist">Acceptable</li>
+									<li class="checklist">Scarce</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Not credit</li>
+									<li class="checklist">Low liquidity</li>
+									<li class="checklist">Cannot cover externalities</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade" id="fiat" role="tabpanel" aria-labelledby="fiat-tab">
+			        <h1 class="text-center size3 p-3">Fiat Money</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Issued by central authority as the Central Bank</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Currency as a circulation medium to transport, exchange and store</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Measurement of value, however inflationary</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">960AD till today</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">1690 AD in the US: Bills to credit</li>
+									<li class="checklist">US dollar issued by the FED</li>
+									<li class="checklist">EURO issued by the ECB</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Transportable</li>
+									<li class="checklist">Measurable</li>
+									<li class="checklist">Exchange measurement</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Inflationary</li>
+									<li class="checklist">Centralized</li>
+									<li class="checklist">Printed in mass especially in crisis times</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade" id="plastic" role="tabpanel" aria-labelledby="plastic-tab">
+			        <h1 class="text-center size3 p-3">Plastic Money</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>As is difficult to store banknotes, banks invented plastic cards as debit/credit cards </li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Account money has invented</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Storing of value just digitalized</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">1946 AD till today</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">First bank issued credit card in 1946 by Brooklyn banker</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Acceptability</li>
+									<li class="checklist">Storable</li>
+									<li class="checklist">Exchange measurement</li>
+									<li class="checklist">Trackeable</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Account money can be doubled by the payment provider</li>
+									<li class="checklist">Centralized</li>
+									<li class="checklist">Similar effects like fiat money</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		        <div class="tab-pane fade" id="crypto" role="tabpanel" aria-labelledby="crypto-tab">
+			        <h1 class="text-center size3 p-3">Cryptocurrencies</h1>
+		        	<div class="container">
+			        	<div class="row">
+				        	<div class="col">
+					            <ul class="fa-ul size2 p-4">
+								  <li class="checklist">Characteristics:</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Emerged as ultimate alternative to normal forms of money </li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Blockchain technology</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Gives the issuer the possibility to design</li>
+								  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Double spending is not possible</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Timespan:</li>
+									<li class="checklist">2008 till today</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Examples:</li>
+									<li class="checklist">Bitcoin BTC</li>
+									<li class="checklist">Ethereum TH</li>
+									<li class="checklist">Monero XMR</li>
+									<li class="checklist">Ripple XRP</li>
+								</ul>
+				        	</div>
+			        	</div>
+			        	<div class="row">
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Pros:</li>
+									<li class="checklist">Decentralized</li>
+									<li class="checklist">Storable</li>
+									<li class="checklist">Scalable</li>
+									<li class="checklist">Exchange Measurement</li>
+									<li class="checklist">Store of Value</li>
+								</ul>
+				        	</div>
+				        	<div class="col-12 col-md-6">
+								<ul class="fa-ul size2 p-4">
+									<li class="checklist">Cons:</li>
+									<li class="checklist">Development is ongoing</li>
+								</ul>
+				        	</div>
+			        	</div>
+		        	</div>
+		        </div>
+		      </div>
+
+			</div>
+			<p class="m-5"></p>	     
+			
+            <h2 class="size3"><a name="intro#price" style="padding-top: 90px;"></a>The price formation machine</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Negative Feedback System</h3>
+			<div class="m-4"></div>
+            <p class="size2">A society with a good as money creates a Negative feedback System. This can be applied to Barter, Commodity Money and Metal Money. A society with a money which value can be traced back <a href="https://en.wikipedia.org/wiki/Regression_theorem" target="_blank">("regressed")</a> to its value as a commodity also creates a Negative feedback System. This can be applied to Representative Money.</p>
+            <p class="size2">A Negative feedback occurs when some function of the output of a system is fed back in a manner that tends to reduce the fluctuations in the output, whether caused by changes in the input or by other disturbances..</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://www.electronics-tutorials.ws/wp-content/uploads/2013/08/sys35.gif" />
+					<p class="m-5"></p>
+				</div>
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://assets.ltkcontent.com/images/8616/negative-feedback-loop_27c5571306.jpg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+            <p class="size2">A Negative feedback tends to reduce the effects of gain change but, in exchange, increases stability. A negative feedback system is a self regulation mechanism that helps maintain stability or balance in a system.</p>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Characteristics</h3>
+			<div class="m-4"></div>
+            
+            <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Price formation follows marginal wishes of consumers</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Relative prices prioritize consumers wishes</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Resources are allocated according to consumers wishes.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Entrepreneurs get fair signals about market demand</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Entrepreneurs assume the risk of their projects</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Companies are funded only by sales, according to consumers aggregated demand.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Little entry barriers for new providers.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>New demand is always satisfied by providers.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Values are freely chosen by citizens.</li>
+			</ul>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Problems</h3>
+			<div class="m-4"></div>
+
+             <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Hoarding</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Externalities</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Critical Resources</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Money Scarcity</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>The Problem of Credit</li>
+			</ul>
+			<p class="m-5"></p>
+			
+            <h2 class="size3"><a name="intro#road" style="padding-top: 90px;"></a>The abandoned road</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+			<h3 class="blue">Monetary Expansion</h3>
+			<div class="m-4"></div>
+			
+            <p class="size2">Central Planning</p>
+            <p class="size2">Scientifically planned society.  Debate on neutrality of money, Normative vs positive economics</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://thinkingmachineblog.files.wordpress.com/2012/08/us-dollar-debasement.jpg" />
+					<p class="m-5"></p>
+				</div>
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://topforeignstocks.com/wp-content/uploads/2022/09/Cumulative-central-bank-balance-sheets.png" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+            <p class="size2">You can explore a more extended list of changes on this <a href="https://wtfhappenedin1971.com/" target="_blank">web</a>.</p>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Positive Feedback System</h3>
+			<div class="m-4"></div>
+            <p class="size2">A society driven by monetary expansion is an example of Positive Feedback System</p>
+            <p class="size2">In a positive feedback mechanism, the output of the system stimulates the system in such a way as to further increase the output. As a consequence it amplifies or magnifies a certain disturbance or activity, leading to an increase in magnitude. Positive feedback mechanisms control self-perpetuating events that can be out of control. This tends to move a system away from its equilibrium state and make it more unstable.</p>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://www.tutorialspoint.com/control_systems/images/closed_loop_noise_signal.jpg" />
+					<p class="m-5"></p>
+				</div>
+			    <div class="col-6 text-center">
+		            <img class="img-fluid" src="https://climatechangeclearly.files.wordpress.com/2015/02/positivefeedbackloop-590.jpg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+			
+            <h3 class="blue">Characteristics</h3>
+			<div class="m-4"></div>
+             <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Price Formation is distorted.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Distortion in relative prices</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Misallocation of resources.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Entrepreneurs get distorted signals about market demand. Impossibility of Economic Calculation</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Companies are funded by credit.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>High entry barriers for new providers.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Projects risks is transferred to citizens</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Mismatches between supply and demand. Cantillon effects</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Values imposed by credit preferences.</li>
+			</ul>
+			<p class="m-5"></p>
+
+            <!-- h3 class="blue">Psychological Justification</h3>
+			<div class="m-4"></div>
+            <p class="size2">The 3 brains</p>
+            <p class="size2">Emotions and Reason</p>
+            <p class="size2">Rationalism vs Empiricism</p>
+            <p class="size2">The problem of induction</p>
+            <p class="size2">Data vs Models</p>
+            <p class="size2">Open vs Close World Assumptions</p>
+			<p class="m-5"></p-->
+            
+            <h2 class="size3"><a name="intro#where" style="padding-top: 90px;"></a>Where we are?</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col text-center">
+		            <img class="img-fluid" src="https://gasclick.co/img/nature_money_horizontal.svg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+			    <div class="col-auto text-center">
+	               	<table class="table w-auto mx-auto fs-6" style="vertical-align : middle;text-align:center;">
+					  <thead class="thead-dark">
+					    <tr>
+					      <th scope="col" rowspan="3">Feature</th>
+					      <th scope="col" colspan="2">Negative</th>
+					      <th scope="col" colspan="2">Positive</th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Decentralized</th>
+					      <th scope="col">Centralized</th>
+					      <th scope="col">Centralized</th>
+					      <th scope="col">Decentralized</th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Barter, Commodity, Metal</th>
+					      <th scope="col">Representative</th>
+					      <th scope="col">Fiat, Plastic</th>
+					      <th scope="col">Crypto</th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row">Price Formation</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Distorted</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Relative Prices</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Distorted</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Liquidity Available</th>
+					      <td class="text-danger fw-bold">Very Limited</td>
+					      <td class="text-danger fw-bold">Very Limited</td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Critical Resources</th>
+					      <td class="text-danger fw-bold">Possible</td>
+					      <td class="text-danger fw-bold">Possible</td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Allocation of Resources</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Missallocation</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Economic Calculation</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Distorted</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Credit Availability</th>
+					      <td class="text-danger fw-bold">No</td>
+					      <td class="text-danger fw-bold">No</td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Entry Barriers</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Yes</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Projects Risk</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">On Citizens</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Supply / Demand matching</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">No</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Externalities</th>
+					      <td class="text-danger fw-bold">Too Many</td>
+					      <td class="text-danger fw-bold">Too Many</td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Social Values</th>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td><i class="fas fa-smile" style="color:#54C571"></i></td>
+					      <td class="text-danger fw-bold">Imposed</td>
+					      <td class="bg-secondary"><i class="fas fa-smile" style="color:#54C571"></i></td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			<p class="m-5"></p>
+
+            <h2 class="size3"><a name="intro#private" style="padding-top: 90px;"></a>Privately Issued Currencies</h2>
+            <div class="line"></div>
+			<p class="m-5"></p>
+			
+            <h3 class="blue">Currency as a driver</h3>
+			<div class="m-4"></div>
+            <p class="size2">A Society with Privately Issued Currencies is a return to the Negative Feedback System but solves the problem of this structure</p>
+			<p class="m-5"></p>
+
+            <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Hoarding won't cut liquidity</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Externalities can be fixed</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>There are not Critical Resources</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>No Money Scarcity</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Availability of Credit</li>
+			</ul>
+			<p class="m-5"></p>
+						
+            <h3 class="blue">Best of both worlds</h3>
+			<div class="m-4"></div>
+            <div class="size2">Debt without Cantillon</div>
+			<p class="m-5"></p>
+
+            <ul class="fa-ul size2">
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Daily poll on resource assignment. Investors and consumers, as cryptousers, decide on every action to whom assign productive resources based on their perception on the credibility of the issuer.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Competence of money. Dislike centralized money issuing, when the money is issued by private parties in competence their relative value is proportional to the credibility of the issuer. This triggers the necessity for the issuer to boost credibility.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Correct price formation. Investors translate to the coins the relative value that the perceive from the issuer. Consumers translate to the articles the relative value that they perceive in goods and services. Therefore, there is a correct price formation according to will of citizens.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Relative prices prioritize consumers wishes</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Resources are allocated according to consumers wishes.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Entrepreneurs get fair signals about market demand</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Private Investor assume the risk of their projects</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Companies are funded only by credit of investors.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Little entry barriers for new providers.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>New demand is always satisfied by providers.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Correct match demand/supply. Having the correct price formation for goods and services according to the will of citizens guarantees their supply matches exactly their expected demand without overpricing or undervalued mismatches of centralized money issuing. Let me social machine work on its own without bias.</li>
+			  <li class="checklist"><span class="fa-li"><i class="fas fa-check size2"></i></span>Values are freely chosen by citizens.</li>
+			</ul>
+			<p class="m-5"></p>
+
+            <h3 class="blue">Not a new idea</h3>
+			<div class="m-4"></div>
+            <div class="size2">What if the government let anyone use a currency of his or her choosing? What if the government permitted entrepreneurs to innovate in the monetary sector, such as by creating digital currencies or minting commodity money? This is precisely what F.A. Hayek argues in <a href="https://mises.org/library/denationalisation-money-argument-refined" target="_blank">his book</a>.</div>
+			<p class="m-5"></p>
+
+			<div class="row justify-content-center">
+			    <div class="col text-center">
+		            <img class="img-fluid" src="https://m.media-amazon.com/images/I/51yRY-k7x4L.jpg" />
+					<p class="m-5"></p>
+				</div>
+			</div>
+
+            <div class="row my-5 py-5">
+                <div class="col-12 col-lg-12">
+	                <a href="https://gasclick.net/whitepaper_2tokenization.html">
+						<div class="card h-100 my-3">
+						  <div class="card-body row">
+						  	<div class="col-9 text-start my-auto">
+		            			<h5 class="color-wp1">Next</h5>
+						    	<p class="card-title color-wp1">Tokenization to the Rescue</p>				  	
+						  	</div>
+						  	<div class="col-3 d-flex align-items-center justify-content-end">
+		            			<h1 class="color-wp1"><i class="fa fa-fw fa-arrow-right fa-3x"></i></h1>						  	
+						  	</div>						  
+						  </div>
+						</div>
+					</a>
+				</div>
+	        </div>
+            
+        </div>
+
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="sidebar-right background-wp1">
+
+        </nav>
+            
+    </div>
+    
+	<footer class="background-theme2">
+		<div class="container">
+			<div class="row g-3 pt-4">
+				<div class="col-12 col-lg-3">
+					<div><img src="https://gasclick.co/img/logo.png" height="64" /></div>
+					<div class="py-3 color-theme-reverse2">Merging the new cryptoeconomy and the traditional economy. By leveraging the value already existing on LPG consumption, we tokenize, capture it and offer to worldwide investors. A match made in heaven.</div>
+				</div>
+				<div class="col-12 col-lg-4">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<ul class="list-unstyled">
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="index.html" role="menu">PLATFORM</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="token.html" role="menu">TOKEN</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="project.html" role="menu">PROJECT</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="whitepaper.html" role="menu">WHITEPAPER</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="investors.html" role="menu">TOKEN SALES</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="contactenos.html" role="menu"><div id="google_translate_element"></div></a></li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<ul class="list-unstyled">
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://docs.google.com/presentation/d/1vrQLlON05ywUoUDJFhOax4Q7iJf0x-zQBmtZll-rX3s/edit#slide=id.g1f87997393_0_782" role="menu" target="_blank">Pitch Deck</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://gasclick.net/litepaper_en.html" role="menu" target="_blank">Litepaper</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="https://www.catallactic.org/" role="menu" target="_blank">Catallactic</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="legal_terms.html" role="menu" target="_blank">TERMS</a></li>
+								<li><a class="lh-lg text-decoration-none color-theme-reverse2 fs-6" href="legal_privacy_consumer.html" role="menu" target="_blank">PRIVACY</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-5 color-theme-reverse2">
+					<div class="row">
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="fs-6"><b>GasClick Global</b><br />
+								Edificio Platinum Plaza<br/>Torre 1, piso 11<br/>Calle Dean Valdivia 148<br/>San Isidro, Lima 27</br/>Lima, Perú<br/>
+								<img src="https://gasclick.co/img/ico_mail-h.png"> <a href="mailto:info@gasclick.net" class="color-theme-reverse2 text-decoration-none">info@gasclick.net</a>
+							</div>
+						</div>
+						<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="fs-6"><b>ClassifiApps Ltd</b><br />
+								51 Carlisle Offices<br/>Bracken Road<br/>Sandyford<br/>D18 CV48</br/>Dublin, Ireland<br/>
+								<img src="https://gasclick.co/img/ico_mail-h.png"> <a href="mailto:info@gasclick.net" class="color-theme-reverse2 text-decoration-none">info@gasclick.net</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="border-theme-reverse2">
+			<p class="text-center fs-6 fw-bold color-theme-reverse2 pb-4">&copy; Copyright 2023 GasClick Global by ClassifiApps Ltd. All Rights Reserved</p>
+		</div>
+	</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({includedLanguages: 'ar,de,en,es,fa,fr,hy,hi,id,it,ja,ko,nl,pl,pt,ru,so,tr,uk,vi,zh,zh-TW'}, 'google_translate_element');
+		  
+		  let lang = document.location.href.indexOf("googtrans") > -1 ? document.location.href.substring(document.location.href.indexOf("googtrans")+10) : "en";
+	 	  let icons = {'ar':'sa','zh-TW':'cn','nl':'nl','en':'us','fr':'sa','de':'de','hi':'in','id':'id','it':'it','ja':'jp','ko':'kr','fa':'ir','pt':'pt','ru':'ru','sk':'sk','es':'es','tr':'tk','tw':'tw','uk':'ua','vi':'vn'};
+		  $('button .flag-icon').attr('class', function(i, c){
+		    return c.replace(/(^|\s)flag-icon-\S+/g, ' flag-icon-' + icons[lang]);
+		  });
+		}
+		function translateLanguage(lang) {
+		  window.location = "#googtrans/" + lang;
+		  location.reload();
+		}
+	</script>
+
+</body>
+
+</html>
